@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="AI in Health Care, Autonomous vehicles, AI in Finance">
+    <meta name="author" content="K S Sooraj">
+    <title>Artificial Intelligence Vibes Case Studies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background-image: url("images/action4.jpg");
+            color: #2c3e50;
+            line-height: 1.7;
+            overflow: scroll;
+        }
+
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            60% { opacity: 1; transform: translateY(-5px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            background: linear-gradient(to right, #1E3A8A, #3B82F6);
+            color: #fff;
+            text-align: center;
+            padding: 25px 15px;
+            overflow: hidden;
+        }
+
+        header nav {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 12px;
+            border-radius: 8px;
+            margin: 10px auto;
+            width: 90%;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Comic Neue', cursive;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            background: #f1c40f;
+            color: #2c3e50;
+        }
+
+        header h1 {
+            font-family: 'Comic Neue', cursive;
+            font-size: 34px;
+            margin: 12px 0;
+            color: #f1c40f;
+        }
+
+        .header-subtitle {
+            font-size: 16px;
+            font-style: italic;
+            color: #ecf0f1;
+        }
+
+        .ai-vibes {
+            width: 85%;
+            margin: 25px auto;
+            padding: 25px;
+            background: #fff;
+            border-radius: 12px;
+            text-align: left;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            animation: bounceIn 0.6s ease-out;
+        }
+
+        .ai-vibes h2 {
+            font-family: 'Comic Neue', cursive;
+            font-size: 28px;
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+
+        .ai-vibes p {
+            font-size: 16px;
+            color: #34495e;
+        }
+
+        .cool-slides {
+            width: 60%;
+            margin: 25px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cool-slides h2 {
+            font-family: 'Comic Neue', cursive;
+            font-size: 26px;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+
+        .audio-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .audio-item {
+            background: transparent;
+            border: 2px solid #3498db;
+            backdrop-filter: blur(5px);
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .audio-label {
+            font-family: 'Comic Neue', cursive;
+            font-size: 16px;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 2px solid #3498db;
+        }
+
+        .fun-columns {
+            display: block;
+            width: 85%;
+            margin: 25px auto;
+        }
+
+        .column {
+            background: transparent;
+            border: 2px solid #3498db;
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            animation: bounceIn 0.6s ease-out;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: stretch;
+            justify-content: flex-start;
+        }
+
+        .column:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .column h2 {
+            font-family: 'Comic Neue', cursive;
+            font-size: 22px;
+            color: #3498db;
+            margin-bottom: 12px;
+        }
+
+        .column p {
+            font-size: 15px;
+            color: white;
+            margin-bottom: 12px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            min-width: 0;
+            max-height: 300px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-top: 15px;
+            border: 2px solid #e67e22;
+        }
+
+        .read-more-toggle {
+            display: none;
+        }
+
+        .read-more-btn {
+            display: inline-block;
+            background: #3498db;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-family: 'Comic Neue', cursive;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .read-more-btn:hover {
+            background: #2980b9;
+        }
+
+        .read-more-btn .show-more {
+            display: inline;
+        }
+
+        .read-more-btn .show-less {
+            display: none;
+        }
+
+        .read-more-toggle:checked + .read-more-btn .show-more {
+            display: none;
+        }
+
+        .read-more-toggle:checked + .read-more-btn .show-less {
+            display: inline;
+        }
+
+        .read-more-toggle:checked + .read-more-btn {
+            background: #2980b9;
+        }
+
+        .extra-content {
+            display: none;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #34495e;
+            text-align: left;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .read-more-toggle:checked ~ .extra-content {
+            display: block;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-family: 'Comic Neue', cursive;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 10px;
+            }
+            header nav {
+                width: 92%;
+            }
+            header nav ul {
+                gap: 12px;
+            }
+            header nav ul li a {
+                font-size: 16px;
+                padding: 6px 10px;
+            }
+            header h1 {
+                font-size: 28px;
+            }
+            .ai-vibes {
+                width: 92%;
+                padding: 15px;
+            }
+            .cool-slides {
+                width: 92%;
+                padding: 15px;
+            }
+            .audio-item {
+                max-width: 350px;
+                padding: 10px;
+            }
+            audio {
+                max-width: 300px;
+            }
+            .fun-columns {
+                width: 92%;
+                margin: 20px auto;
+            }
+            .column {
+                padding: 15px;
+                margin: 15px auto;
+            }
+            .column img {
+                max-height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 { font-size: 20px; }
+            .header-subtitle { font-size: 14px; }
+            .cool-slides { width: 95%; }
+            .audio-item {
+                max-width: 250px;
+                padding: 8px;
+            }
+            audio {
+                max-width: 200px;
+            }
+            .audio-label {
+                font-size: 14px;
+            }
+            .column h2 { font-size: 11px; }
+            .column p { font-size: 11px; }
+            .column img { max-height: 150px; }
+            .read-more-btn { font-size: 11px; }
+            header nav {
+                width: 95%;
+            }
+            header nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 0;
+            }
+            header nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+            header nav ul li a {
+                font-size: 16px;
+                padding: 10px 15px;
+                display: block;
+                border-radius: 8px;
+            }
+            .read-more-btn {
+                font-size: 11px;
+                padding: 5px 10px;
+                border-radius: 8px;
+            }
+            footer p {
+                font-size: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+            </ul>
+        </nav>
+        <h1>AI Case Studies</h1>
+        <p class="header-subtitle">Explore AI Case Studies</p>
+    </header>
+    <main>
+        <section class="ai-vibes">
+            <h2 style="color: #e67e22;">AI in Action: Real-World Case Studies</h2>
+            <p>Artificial Intelligence (AI) is transforming industries through innovative applications. In healthcare, AI enhances diagnostics and personalizes treatment plans, improving patient outcomes. Autonomous vehicles rely on AI for navigation and safety, revolutionizing transportation. In finance, AI detects fraud and optimizes trading strategies, boosting efficiency. Creative industries leverage AI to generate art, music, and content, redefining artistic expression. These case studies showcase AI’s impact, from streamlining operations to solving complex challenges. By integrating machine learning, deep learning, and generative models, AI drives progress across sectors, demonstrating its potential to shape the future.</p>
+        </section>
+        <section class="cool-slides">
+   <h2>Case Study Audio Narration</h2>
+  <div class="audio-container">
+                <div class="audio-item">
+       <p class="audio-label">AI Case Study Narration</p>
+      <audio controls aria-label="Audio narration of AI case studies">
+                        <source src="audio/case1.mp3" type="audio/mp3">
+                     Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <section class="fun-columns">
+            <div class="column">
+                <h2>AI in Healthcare</h2>
+                <p>AI is revolutionizing healthcare by enhancing diagnostics and personalizing treatment. Machine learning models analyze medical images to detect diseases like cancer with high accuracy, while predictive algorithms identify at-risk patients for early intervention.</p>
+                <input type="checkbox" id="healthcare-toggle" class="read-more-toggle">
+                <label for="healthcare-toggle" class="read-more-btn">
+                    <span class="show-more">Read More</span>
+                    <span class="show-less">Read Less</span>
+                </label>
+                <div class="extra-content">
+                    <p>In hospitals, AI-powered tools like IBM Watson Health analyze vast patient datasets, cross-referencing medical records with global research to recommend precise treatments. Convolutional neural networks (CNNs) excel at detecting anomalies in X-rays and MRIs, often outperforming human radiologists in spotting early-stage cancers. Google’s DeepMind made headlines by predicting protein folding structures, accelerating drug discovery for diseases like Alzheimer’s. Predictive models use patient data to forecast health risks, enabling preventative care that reduces hospital readmissions. Natural language processing (NLP) powers mental health chatbots, such as Woebot, offering 24/7 emotional support. AI also streamlines administrative tasks, like automating medical coding, saving billions annually. However, ethical challenges persist, including data privacy concerns, as patient information must be safeguarded. Algorithmic bias, where models may underperform for certain demographics, requires ongoing scrutiny. Looking ahead, AI’s integration with wearable devices and telemedicine promises real-time health monitoring, paving the way for precision medicine. Despite hurdles, AI’s transformative impact on healthcare continues to grow, improving outcomes and accessibility worldwide.</p>
+                </div>
+                <img src="images/ibm.jpg" alt="AI in Healthcare">
+            </div>
+            <div class="column">
+                <h2>Autonomous Vehicles</h2>
+                <p>AI powers autonomous vehicles, enabling self-driving cars to navigate roads safely. Computer vision and deep learning process sensor data to detect obstacles, traffic signs, and pedestrians, ensuring real-time decision-making.</p>
+                <input type="checkbox" id="auto-toggle" class="read-more-toggle">
+                <label for="auto-toggle" class="read-more-btn">
+                    <span class="show-more">Read More</span>
+                    <span class="show-less">Read Less</span>
+                </label>
+                <div class="extra-content">
+                    <p>Companies like Tesla and Waymo leverage deep neural networks to train autonomous systems on millions of miles of driving data, refining navigation and safety protocols. Computer vision, powered by convolutional neural networks (CNNs), processes inputs from cameras, LIDAR, and radar to map environments in real-time. Reinforcement learning optimizes driving strategies, allowing vehicles to adapt to unpredictable conditions, such as erratic drivers or adverse weather. NVIDIA’s DRIVE platform, for example, integrates AI for path planning and collision avoidance, achieving Level 4 autonomy. Autonomous vehicles reduce human error, potentially cutting accident rates by 90%, and enhance mobility for the elderly and disabled. Beyond cars, AI drives autonomous trucks, like those from TuSimple, and delivery drones, transforming logistics. However, challenges include regulatory frameworks, as governments grapple with safety standards. Ethical dilemmas, such as prioritizing pedestrian or passenger safety in unavoidable collisions, spark debate. Public trust remains a hurdle, with surveys showing skepticism about self-driving technology. Looking forward, AI advancements in 5G connectivity and edge computing will enable faster, safer autonomous systems, reshaping urban mobility and logistics.</p>
+                </div>
+                <img src="images/auto.jpg" alt="Autonomous Vehicles">
+            </div>
+        </section>
+        <section class="fun-columns">
+            <div class="column">
+                <h2>AI in Finance</h2>
+                <p>AI transforms finance by detecting fraud and optimizing trading. Machine learning models analyze transaction patterns to identify suspicious activities, while algorithmic trading systems execute high-speed trades based on market trends.</p>
+  <input type="checkbox" id="finance-toggle" class="read-more-toggle">
+    <label for="finance-toggle" class="read-more-btn">
+        <span class="show-more">Read More</span>
+          <span class="show-less">Read Less</span>
+                </label>
+                <div class="extra-content">
+                    <p>Banks like JPMorgan Chase deploy AI to monitor billions of transactions daily, using anomaly detection algorithms to flag fraudulent activities in milliseconds. Machine learning models, trained on historical data, identify patterns indicative of fraud, such as unusual spending or account access. In investment, AI-driven robo-advisors like Betterment and Wealthfront offer personalized portfolio management, leveraging predictive analytics to optimize returns at low costs. Natural language processing (NLP) scans news articles, earnings reports, and social media for market sentiment, informing trading strategies. BlackRock’s Aladdin platform uses AI for risk assessment, analyzing market volatility and portfolio exposure. AI also powers credit scoring, with companies like Zest AI improving loan approvals for underserved populations. These innovations enhance efficiency, reduce fraud, and democratize financial services. However, risks like overfitting models, where algorithms misinterpret noise as patterns, can lead to losses. Regulatory compliance is critical, as AI systems must adhere to strict financial laws. Ethical concerns, including biased lending models, demand transparency. Looking ahead, AI’s integration with blockchain and quantum computing could revolutionize secure transactions and predictive modeling, further transforming finance.</p>
+                </div>
+            <img src="images/coin.jpg" alt="AI in Finance">
+            </div>
+            <div class="column">
+                <h2>AI in Creative Industries</h2>
+                <p>AI redefines creativity by generating art, music, and content. Generative AI models like DALL·E create stunning visuals from text prompts, while AI composers produce original music for films and games.</p>
+                <input type="checkbox" id="creative-toggle" class="read-more-toggle">
+                <label for="creative-toggle" class="read-more-btn">
+                    <span class="show-more">Read More</span>
+                    <span class="show-less">Read Less</span>
+                </label>
+                <div class="extra-content">
+                    <p>Generative AI, powered by models like OpenAI’s DALL·E and Stable Diffusion, transforms creative industries by generating high-quality visuals from text descriptions, enabling artists to explore new styles. In marketing, tools like Jasper and Copy.ai produce ad copy, blog posts, and social media content, streamlining workflows. AI-driven platforms like Runway offer video editing capabilities, allowing filmmakers to create special effects without costly software. Music composition benefits from systems like MuseNet, which generates songs in diverse genres, collaborating with human composers for film scores. For example, AIVA’s AI-composed music has been used in commercials and games. AI also enhances gaming, with procedural content generation creating dynamic worlds in titles like No Man’s Sky. These tools democratize creativity, enabling non-experts to produce professional work. However, ethical concerns arise, including copyright disputes over AI-generated content and the risk of deepfakes in media. The potential displacement of human creatives sparks debate, though many view AI as a collaborative tool. Looking forward, advancements in generative adversarial networks (GANs) and multimodal AI will enable seamless integration of text, visuals, and audio, redefining artistic expression and innovation across entertainment, design, and advertising.</p>
+                </div>
+                <img src="images/action3.jpg" alt="AI in Creative Industries">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 AI Vibes. Made with passion by K S Sooraj.</p>
+    </footer>
+</body>
+</html>

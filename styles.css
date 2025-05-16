@@ -168,6 +168,8 @@ header h1 {
     gap: 20px;
     width: 85%;
     margin: 25px auto;
+    animation: fadeInUp;
+    animation-duration: 2.5s;
 }
 
 .column {
